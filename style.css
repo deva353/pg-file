@@ -1,0 +1,466 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #222;
+    background: #fff;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.logo,
+.footer-logo {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.logo span,
+.footer-logo span {
+    color: #c58b35;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #c58b35;
+}
+
+.book-btn {
+    border: none;
+    background: #c58b35;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 650px;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.55),
+            rgba(0,0,0,0.55)
+        ),
+        url("https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 8%;
+}
+
+.hero-content {
+    max-width: 650px;
+    color: white;
+}
+
+.small-title {
+    color: #e2ad5b;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 65px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.primary-btn,
+.secondary-btn {
+    padding: 14px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.primary-btn {
+    background: #c58b35;
+    color: white;
+}
+
+.secondary-btn {
+    border: 1px solid white;
+    color: white;
+}
+
+
+/* ================= BOOKING ================= */
+
+.booking {
+    width: 85%;
+    margin: -45px auto 70px;
+
+    background: white;
+    padding: 25px;
+
+    display: flex;
+    gap: 20px;
+    align-items: end;
+
+    box-shadow: 0 5px 30px rgba(0,0,0,0.15);
+
+    position: relative;
+    z-index: 10;
+}
+
+.booking-item {
+    flex: 1;
+}
+
+.booking-item label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.booking-item input,
+.booking-item select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+}
+
+.search-btn {
+    background: #c58b35;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    cursor: pointer;
+}
+
+
+/* ================= SECTIONS ================= */
+
+.section {
+    padding: 80px 7%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title p {
+    color: #c58b35;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.section-title h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.section-title span {
+    color: #777;
+}
+
+
+/* ================= ROOMS ================= */
+
+.room-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.room-card {
+    background: white;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.room-card:hover {
+    transform: translateY(-8px);
+}
+
+.room-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.room-content {
+    padding: 22px;
+}
+
+.room-content h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.room-content p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.room-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.room-bottom strong {
+    color: #c58b35;
+}
+
+.room-bottom button {
+    background: #222;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+
+/* ================= FOOD ================= */
+
+.food-section {
+    background: #f8f5ef;
+    padding: 80px 7%;
+}
+
+.food-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.food-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.food-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.food-content {
+    padding: 22px;
+}
+
+.food-content h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.food-content p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.food-content strong {
+    color: #c58b35;
+    font-size: 20px;
+}
+
+
+/* ================= SERVICES ================= */
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    text-align: center;
+    padding: 30px 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+.service-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: #777;
+    line-height: 1.5;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact {
+    background: #222;
+    color: white;
+    padding: 70px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact p {
+    color: #c58b35;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.contact h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.contact span {
+    color: #ccc;
+}
+
+.contact button {
+    padding: 15px 30px;
+    background: #c58b35;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #111;
+    color: #aaa;
+    padding: 30px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    color: white;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    nav {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .room-container,
+    .food-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .services {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .booking {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-btn {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .hero {
+        min-height: 550px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .room-container,
+    .food-container,
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    .contact {
+        flex-direction: column;
+        gap: 25px;
+        align-items: flex-start;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+}

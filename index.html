@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>harsha homes</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            Royal<span>Stay</span>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#rooms">Rooms</a>
+            <a href="#food">Food</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="book-btn">Book Now</button>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="small-title">WELCOME TO ROYAL STAY</p>
+
+            <h1>
+                Stay Comfortably.<br>
+                Eat Deliciously.
+            </h1>
+
+            <p class="hero-text">
+                Experience comfortable rooms, delicious food,
+                and excellent hospitality under one roof.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#rooms" class="primary-btn">Explore Rooms</a>
+                <a href="#food" class="secondary-btn">View Food</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= BOOKING BOX ================= -->
+
+    <section class="booking">
+
+        <div class="booking-item">
+            <label>Check In</label>
+            <input type="date">
+        </div>
+
+        <div class="booking-item">
+            <label>Check Out</label>
+            <input type="date">
+        </div>
+
+        <div class="booking-item">
+            <label>Guests</label>
+            <select>
+                <option>1 Guest</option>
+                <option>2 Guests</option>
+                <option>3 Guests</option>
+                <option>4 Guests</option>
+            </select>
+        </div>
+
+        <button onclick="searchRooms()" class="search-btn">
+            Search Rooms
+        </button>
+
+    </section>
+
+
+    <!-- ================= ROOMS ================= -->
+
+    <section class="section" id="rooms">
+
+        <div class="section-title">
+
+            <p>OUR ROOMS</p>
+
+            <h2>Choose Your Perfect Room</h2>
+
+            <span>
+                Comfortable rooms designed for a relaxing stay.
+            </span>
+
+        </div>
+
+
+        <div class="room-container">
+
+            <!-- Room 1 -->
+
+            <div class="room-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=900&q=80"
+                    alt="Deluxe Room"
+                >
+
+                <div class="room-content">
+
+                    <h3>Deluxe Room</h3>
+
+                    <p>
+                        Comfortable room with modern furniture,
+                        king-size bed and beautiful interior.
+                    </p>
+
+                    <div class="room-bottom">
+
+                        <strong>₹2,500 / Night</strong>
+
+                        <button onclick="bookRoom('Deluxe Room')">
+                            Book Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Room 2 -->
+
+            <div class="room-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80"
+                    alt="Luxury Room"
+                >
+
+                <div class="room-content">
+
+                    <h3>Luxury Room</h3>
+
+                    <p>
+                        Spacious luxury room with premium furniture,
+                        large bed and relaxing atmosphere.
+                    </p>
+
+                    <div class="room-bottom">
+
+                        <strong>₹4,000 / Night</strong>
+
+                        <button onclick="bookRoom('Luxury Room')">
+                            Book Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Room 3 -->
+
+            <div class="room-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80"
+                    alt="Family Room"
+                >
+
+                <div class="room-content">
+
+                    <h3>Family Room</h3>
+
+                    <p>
+                        Large family room suitable for families
+                        and groups with comfortable beds.
+                    </p>
+
+                    <div class="room-bottom">
+
+                        <strong>₹5,500 / Night</strong>
+
+                        <button onclick="bookRoom('Family Room')">
+                            Book Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOD ================= -->
+
+    <section class="food-section" id="food">
+
+        <div class="section-title">
+
+            <p>OUR FOOD</p>
+
+            <h2>Delicious Food For You</h2>
+
+            <span>
+                Fresh ingredients, delicious recipes and excellent taste.
+            </span>
+
+        </div>
+
+
+        <div class="food-container">
+
+            <!-- Food 1 -->
+
+            <div class="food-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=900&q=80"
+                    alt="Breakfast"
+                >
+
+                <div class="food-content">
+
+                    <h3>Indian Breakfast</h3>
+
+                    <p>
+                        Idly, dosa, vada, sambar and fresh chutneys.
+                    </p>
+
+                    <strong>₹180</strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- Food 2 -->
+
+            <div class="food-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?auto=format&fit=crop&w=900&q=80"
+                    alt="Biryani"
+                >
+
+                <div class="food-content">
+
+                    <h3>Special Biryani</h3>
+
+                    <p>
+                        Delicious aromatic biryani prepared with
+                        fresh spices.
+                    </p>
+
+                    <strong>₹280</strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- Food 3 -->
+
+            <div class="food-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=900&q=80"
+                    alt="Dessert"
+                >
+
+                <div class="food-content">
+
+                    <h3>Special Dessert</h3>
+
+                    <p>
+                        Sweet and delicious desserts to finish
+                        your meal perfectly.
+                    </p>
+
+                    <strong>₹150</strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SERVICES ================= -->
+
+    <section class="section" id="services">
+
+        <div class="section-title">
+
+            <p>OUR SERVICES</p>
+
+            <h2>Everything You Need</h2>
+
+        </div>
+
+
+        <div class="services">
+
+            <div class="service-card">
+
+                <div class="service-icon">🛏️</div>
+
+                <h3>Comfortable Rooms</h3>
+
+                <p>
+                    Clean and comfortable rooms for a relaxing stay.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">🍽️</div>
+
+                <h3>Restaurant</h3>
+
+                <p>
+                    Fresh and delicious food available throughout
+                    the day.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">📶</div>
+
+                <h3>Free Wi-Fi</h3>
+
+                <p>
+                    High-speed Wi-Fi available for all our guests.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">🚗</div>
+
+                <h3>Free Parking</h3>
+
+                <p>
+                    Safe and convenient parking for your vehicle.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="contact" id="contact">
+
+        <div>
+
+            <p>NEED HELP?</p>
+
+            <h2>Make Your Stay Special</h2>
+
+            <span>
+                Contact us for room bookings and food orders.
+            </span>
+
+        </div>
+
+        <button onclick="contactUs()">
+            Contact Us
+        </button>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            Royal<span>Stay</span>
+        </div>
+
+        <p>
+            © 2026 Royal Stay Hotel. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
